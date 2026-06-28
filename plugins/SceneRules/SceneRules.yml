@@ -7,6 +7,8 @@ ui:
     - CommunityScriptsUILibrary
   javascript:
     - SceneRules.js
+    - SceneRulesSettings.js
   css:
     - SceneRules.css
+    - SceneRulesSettings.css
 # requires: CommunityScriptsUILibrary

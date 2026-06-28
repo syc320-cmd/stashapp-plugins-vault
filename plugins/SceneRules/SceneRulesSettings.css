@@ -1,0 +1,185 @@
+.scene-rules-settings {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.scene-rules-settings__header {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+}
+
+.scene-rules-settings__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.scene-rules-settings__category {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.scene-rules-settings__category-name {
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 2px 4px;
+  word-break: break-word;
+  flex: 1 1 auto;
+}
+
+.scene-rules-settings__category-name:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.scene-rules-settings__rule {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  width: 100%;
+}
+
+.scene-rules-settings__rule--indented {
+  padding-left: 24px;
+}
+
+.scene-rules-settings__rule-text {
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 2px 4px;
+  word-break: break-word;
+  flex: 1 1 auto;
+}
+
+.scene-rules-settings__rule-text:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.scene-rules-settings__controls {
+  display: inline-flex;
+  gap: 4px;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.scene-rules-settings__controls button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0 4px;
+  border-radius: 3px;
+  line-height: 1;
+}
+
+.scene-rules-settings__controls button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.scene-rules-settings__controls button[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.scene-rules-settings__delete-btn:hover {
+  color: #ff6b6b;
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.scene-rules-settings__empty {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+  padding: 0.5rem 0;
+}
+
+.scene-rules-settings__footer {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.scene-rules-settings__input {
+  flex: 1 1 100%;
+  padding: 6px 8px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.scene-rules-settings__input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.scene-rules-settings__footer button {
+  flex: 1;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.scene-rules-settings__footer button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.scene-rules-settings__footer button[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.scene-rules-settings__edit-input {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+  padding: 2px 4px;
+  font-size: 14px;
+  font-family: sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.scene-rules-settings__launcher {
+  text-decoration: none;
+  color: inherit;
+}
+
+.scene-rules-settings__launcher-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 1rem;
+  transition: background 0.15s ease;
+}
+
+.scene-rules-settings__launcher-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.scene-rules-settings__launcher-card h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+
+.scene-rules-settings__launcher-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
