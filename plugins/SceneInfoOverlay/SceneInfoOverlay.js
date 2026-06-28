@@ -49,10 +49,10 @@
           id
           title
           date
-          rating
+          rating100
           details
           studio { id name }
-          performers { performer { id name } }
+          performers { id name }
           tags { id name }
         }
       }`;
@@ -89,17 +89,17 @@
     if (scene.date) {
       metaParts.push(scene.date);
     }
-    if (scene.rating != null) {
-      metaParts.push("Rating: " + scene.rating);
+    if (scene.rating100 != null) {
+      metaParts.push("Rating: " + scene.rating100);
     }
     const metaEl = document.createElement("div");
     metaEl.className = "scene-info-overlay__meta";
     metaEl.textContent = metaParts.join(" · ") || "";
     container.appendChild(metaEl);
 
-    // Performers (Scene.performers is [PerformerAppearance] wrapping { performer })
+    // Performers (Scene.performers is [Performer] directly in current schema)
     const names = (scene.performers || [])
-      .map((p) => p?.performer?.name)
+      .map((p) => p?.name)
       .filter(Boolean);
     const perfEl = document.createElement("div");
     perfEl.className = "scene-info-overlay__performers";
